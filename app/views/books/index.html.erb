@@ -6,7 +6,7 @@
   <% @books.each do |book| %>
     <%= render book %>
     <p>
-      <%= link_to "Show this book", book %>
+      <%= link_to "Show this book", book_path(book), class: 'action show' %>
     </p>
   <% end %>
 </div>
