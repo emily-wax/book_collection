@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Books</h1>
+<h1>This is the Book Collection</h1>
 
 <div id="books">
   <% @books.each do |book| %>
@@ -12,3 +12,5 @@
 </div>
 
 <%= link_to "New book", new_book_path %>
+<br>
+<%= link_to "Back to user books", user_books_path %>
